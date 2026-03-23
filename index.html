@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency Room System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏥 Emergency Room System</h1>
+
+    <div class="form">
+        <input type="text" id="name" placeholder="Enter Patient Name">
+
+        <select id="urgency">
+            <option value="LOW">🟢 LOW</option>
+            <option value="MEDIUM">🟡 MEDIUM</option>
+            <option value="HIGH">🟠 HIGH</option>
+            <option value="CRITICAL">🔴 CRITICAL</option>
+        </select>
+
+        <button onclick="addPatient()">Add Patient</button>
+        <button onclick="treatPatient()">Treat Next</button>
+    </div>
+
+    <div class="status">
+        <h2>📋 Waiting List</h2>
+        <ul id="queueList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
